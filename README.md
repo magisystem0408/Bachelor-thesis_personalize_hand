@@ -1,4 +1,4 @@
-# yolov5+Realsence+DeepSense D435i
+# yolov5+Realsence+DeepSenseD435i+MediaPipe
 
 ## Create Environment
 ```shell
