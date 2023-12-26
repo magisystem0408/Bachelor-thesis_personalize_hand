@@ -7,7 +7,7 @@ import osascript
 import glob
 import time
 import pygame
-import random
+import secrets
 
 sys.path.insert(0, './yolov5')
 from yolov5.models.experimental import attempt_load
@@ -103,7 +103,7 @@ class RealSense(object):
                 self._command_semaphore.release()
 
             if command == "turn_on":
-                num =random.randint(1,255)
+                num =secrets.SystemRandom().randint(1,255)
                 self.bulb.set_rgb(num,num,num)
                 self.bulb.turn_on()
 
